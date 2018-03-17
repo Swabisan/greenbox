@@ -9,60 +9,52 @@
 
   <script includ></script>
   <!-- CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
     crossorigin="anonymous">
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <header>
-        <div class="text-center">
-          <img class="img-responsive center-block" src="http://via.placeholder.com/350x100" width="350px" height="100px">
-          <h3>User Preferences</h3>
-        </div>
-      </header>
-    </div>
-    <div class="row">
-      <hr>
-      <p>“Welcome to Green Box, select some of your desired User Preferences so that we can begin recommending cannabis strains
-        and products that suit your very needs!”</p>
-      <hr>
-    </div>
-    <div class="row">
-      <form class="day-night">
-        <div class="text-center">
-          <p>When do you prefer to enjoy your cannabis?</p>
-        </div>
-        <ul class="list-inline">
-          <li>
-            <button class="btn btn-default text-capitalize btn-block" id="bottom-right">Day</button>
-          </li>
-          <li>
-            <button class="btn btn-default text-capitalize btn-block" id="bottom-right">Night</button>
-          </li>
-        </ul>
-      </form>
-      <form class="strain-preferences">
-        <div class="text-center">
-          <p>Strain prefereces?</p>
-        </div>
-        <div>
+  <div class="container-flex">
+    <div class="grid-container">
+      <div class="grid-item">
+        <form class="day-night">
+          <div class="center-anchor">
+            <div class="text-center">
+              <p>When do you enjoy your cannabis?</p>
+            </div>
+          </div>
           <ul class="list-inline">
             <li>
-              <button class="btn btn-default text-capitalize btn-block" id="bottom-right">Hybrid</button>
+              <button class="btn btn-greenbox text-capitalize btn-block">Day</button>
             </li>
             <li>
-              <button class="btn btn-default text-capitalize btn-block" id="bottom-right">Sativa</button>
-            </li>
-            <li>
-              <button class="btn btn-default text-capitalize btn-block" id="bottom-right">Indica</button>
+              <button class="btn btn-greenbox text-capitalize btn-block">Night</button>
             </li>
           </ul>
-        </div>
-      </form>
-      <button class="btn btn-default text-capitalize btn-block" id="bottom-right">Next</button>
+        </form>
+      </div>
+      <div class="grid-item">
+        <form class="strain-preferences">
+          <div class="text-center">
+            <p>Strain prefereces?</p>
+          </div>
+          <div>
+            <ul class="list-inline">
+              <li>
+                <button class="btn btn-greenbox text-capitalize btn-block">Hybrid</button>
+              </li>
+              <li>
+                <button class="btn btn-greenbox text-capitalize btn-block">Sativa</button>
+              </li>
+              <li>
+                <button class="btn btn-greenbox text-capitalize btn-block">Indica</button>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+      <button class="btn btn-greenbox text-capitalize btn-block">Next</button>
     </div>
   </div>
 

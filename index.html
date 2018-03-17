@@ -9,36 +9,48 @@
 
   <script includ></script>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
     crossorigin="anonymous">
 </head>
 
-<body>
+<body class="grid-container">
   <div class="container-fluid">
-    <div class="row">
-      <header>
+    <div class="grid-item">
+      <div class="center-anchor">
         <div class="text-center">
-          <img class="img-responsive center-block" src="http://via.placeholder.com/350x100" width="350px" height="100px">
-          <h3>Welcome to GreenBox</h3>
+          <header>
+            <div>
+              <img class="img-responsive center-block" src="http://via.placeholder.com/350x100" width="350px" height="100px">
+            </div>
+          </header>
         </div>
-      </header>
+      </div>
     </div>
-    <div class="row">
-      <ul class="nav flex-column">
-        <li class="nav-item">
-          <a class="nav-link" href="home/user.html">GreenBox Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Log in with Google</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Log in with Facebook</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Create GreenBox account</a>
-        </li>
-      </ul>
+    <div class="grid-item">
+      <div class="center-anchor">
+        <div class="text-center">
+          <ul class="nav flex-column">
+            <li class="nav-item button">
+              <a href="home/user.html" class="btn btn-greenbox" onclick="home/u">GreenBox Login</a>
+            </li>
+            <li class="nav-item button">
+              <a href="#" class="btn btn-greenbox">Login with Google</a>
+            </li>
+            <li class="nav-item button">
+              <a href="#" class="btn btn-greenbox">Login with Facebook</a>
+            </li>
+            <li class="nav-item button">
+              <a href="#" class="btn btn-greenbox">Create GreenBox account</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <footer>
+        GreenBox 2018
+      </footer>
     </div>
   </div>
 
