@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/swabisan/greenbox/issues"
   },
-  "homepage": "https://github.com/swabisan/greenbox#readme"
+  "homepage": "https://github.com/swabisan/greenbox#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
 }
