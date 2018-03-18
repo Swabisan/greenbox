@@ -9,8 +9,12 @@ $(document).ready(function () {
 
   $("#submit").click(function(event){
     event.preventDefault();
-    $formData = $("#create-preferences").serialize();
-    //console.log($formData);
+    var activeButtons = [];
+
+    $formData = $("button.active").each(function(){
+      activeButtons.push($(this).attr("id"));
+    });
+    console.log(activeButtons);
     $.ajax({
       url: '/update-settings/',
       dataType: 'json',
