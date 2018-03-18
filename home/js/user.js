@@ -9,7 +9,7 @@ $(document).ready(function () {
 
   $(".submit").click(function(event){
     event.preventDefault();
-    $formData = $("#create-preferences").serialize();
+    $formData = $("form").serialize();
     //console.log($formData);
     $.ajax({
       url: '/update-settings/',
