@@ -31,6 +31,7 @@ width: 350px;
 box-shadow: 1px 2px grey;
 }
 .btn-greenbox-nomargin {
+  margin-top: 4%;
 background-color: honeydew;
 color: rgb(88, 184, 142);
 width: 350px;
@@ -70,4 +71,22 @@ padding: 10px;
 }
 .in-line {
 display: inline;
+}
+.addspace {
+  margin-top: 3%;
+}
+#mood-active {
+  background-image: "assets/active.jpg";
+}
+#mood-motivate {
+  background-image: "assets/active.jpg"";
+}
+#mood-creativity {
+  background-image: "assets/active.jpg"";
+}
+#mood-anxiety {
+  background-image: "assets/active.jpg"";
+}
+#mood-happy {
+  background-image: "assets/active.jpg"";
 }
