@@ -16,7 +16,7 @@ height: 50pt;
 margin-top: 4%;
 }
 .footer {
-position: fixed;
+position: absolute;
 left: 0;
 bottom: 0;
 width: 100%;
@@ -41,3 +41,37 @@ padding: 20px;
 font-size: 30px;
 text-align: center;
 }
+.submit-button {
+  border-radius: 10px;
+  box-sizing: content-box;
+  background-color: rgb(88, 184, 142);
+  color: white;
+}
+
+.doc-button {
+  border-radius: 10px;
+  background-color: rgb(88, 184, 142);
+  color: white;
+}
+
+.fixed-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.fixed-header {
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+color: honeydew;
+background-color: rgba(96, 211, 161, 0.8);
+text-align: center;
+}
+.grid-container-white {
+  display: grid;
+  grid-template-columns: auto auto 4;
+  background-color: whitesmoke;
+  padding: 10px;
+  }
