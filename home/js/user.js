@@ -7,7 +7,7 @@ $(document).ready(function () {
     });
   });
 
-  $(".submit").click(function(event){
+  $("#submit").click(function(event){
     event.preventDefault();
     $formData = $("form").serialize();
     //console.log($formData);
