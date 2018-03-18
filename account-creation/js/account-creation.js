@@ -1,7 +1,7 @@
 $(".submit").click(function(event){
   event.preventDefault();
   $formData = $("#create-account").serialize();
-  console.log($formData);
+  //console.log($formData);
   $.ajax({
     url: '/create/',
     dataType: 'json',
