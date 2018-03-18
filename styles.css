@@ -38,7 +38,7 @@ box-shadow: 1px 2px grey;
 }
 .grid-container {
 display: grid;
-grid-template-columns: auto auto 4;
+grid-template-columns: auto auto 6;
 background-color: rgba(96, 211, 161, 0.8);
 padding: 10px;
 }

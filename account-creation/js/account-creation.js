@@ -1,4 +1,4 @@
-$("submit").click(function(event){
+$(".submit").click(function(event){
   event.preventDefault;
   var formData = $("#create-account").serialize();
   $.post({
