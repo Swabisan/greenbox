@@ -1,12 +1,17 @@
 $(".submit").click(function(event){
-  event.preventDefault;
-  var formData = $("#login-account").serialize();
-  $.post({
-    url: "localhost:3000/login",
-    data: formData,
-    method: "POST"
-  }).done(function(response){
-    var returnValue = JSON.decode(response);
-    console.log(returnValue);
+  event.preventDefault();
+  $formData = $("#login-account").serialize();
+  console.log($formData);
+  $.ajax({
+    url: '/login/',
+    dataType: 'json',
+    type: 'POST',
+    data: $formData,
+    success: function(data){
+      console.log(data);
+    },
+    error: function(data){
+      console.log(data);
+    }
   });
 });
