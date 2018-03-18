@@ -7,7 +7,7 @@ $(document).ready(function () {
     });
   });
 
-  $(".submit").click(function(event){
+  $("#submit").click(function(event){
     event.preventDefault();
     $formData = $("#create-preferences").serialize();
     //console.log($formData);
