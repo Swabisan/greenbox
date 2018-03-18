@@ -7,9 +7,9 @@ $(document).ready(function () {
     });
   });
 
-  $(".submit").click(function(event){
+  $("#submit").click(function(event){
     event.preventDefault();
-    $formData = $("form").serialize();
+    $formData = $("#create-preferences").serialize();
     //console.log($formData);
     $.ajax({
       url: '/update-settings/',
