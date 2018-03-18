@@ -16,7 +16,7 @@ height: 50pt;
 margin-top: 4%;
 }
 .footer {
-position: absolute;
+position: fixed;
 left: 0;
 bottom: 0;
 width: 100%;
@@ -75,29 +75,22 @@ display: inline;
 .addspace {
 margin-top: 3%;
 }
+#strain-panel {
+margin: 0%;
+}
 #mood-panel {
+margin: 0%;
 display: none;
 }
-#mood-active {
-background-image: "assets/active.jpg";
-}
-#mood-motivate {
-background-image: "assets/active.jpg"";
-}
-#mood-creativity {
-background-image: "assets/active.jpg"";
-}
-#mood-anxiety {
-background-image: "assets/active.jpg"";
-}
-#mood-happy {
-background-image: "assets/active.jpg"";
-}
-h4 {
+header {
 font-size: 40px;
 font-size: 3.5vw;
+color: honeydew;
 }
 footer {
 font-size: 20px;
 font-size: 1.5vw;
+}
+.btn-outline-primary{
+color: honeydew !important;
 }
