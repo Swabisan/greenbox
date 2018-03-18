@@ -9,23 +9,25 @@ $(document).ready(function () {
 
   $("#submit").click(function(event){
     event.preventDefault();
-    var activeButtons = [];
+    var activeButtons = {};
 
-    $formData = $("button.active").each(function(){
-      activeButtons.push($(this).attr("id"));
+    $formData = $("button").each(function(){
+      var key = $(this).attr('name');
+      var value = $(this).attr('aria-pressed');
+      activeButtons[key] = value;
     });
     console.log(activeButtons);
-    $.ajax({
-      url: '/update-settings/',
-      dataType: 'json',
-      type: 'POST',
-      data: $formData,
-      success: function(data){
-        console.log(data);
-      },
-      error: function(data){
-        console.log(data);
-      }
-    });
+     $.ajax({
+       url: '/update-settings/',
+       dataType: 'json',
+       type: 'POST',
+       data: activeButtons,
+       success: function(data){
+         console.log(data);
+       },
+       error: function(data){
+         console.log(data);
+       }
+     });
   });
 });
