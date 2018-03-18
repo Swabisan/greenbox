@@ -8,6 +8,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	if(document.cookie != ""){
+		window.location = 'http://google.com';
+	}else {
+
+	}
+	</script>
 	<!-- CSS -->
 	<link rel="stylesheet" href="../styles.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -24,7 +31,9 @@
 						<div class="fixed-header">
 							<h2>User Info</h2>
 						</div>
+
 					</header>
+
 				</div>
 			</div>
 		</div>
@@ -54,6 +63,25 @@
 			</div>
 		</div>
 	</div>
+	<div class="modal fade" id="error-notify" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 id="modal-header" class="modal-title">Login Error</h4>
+        </div>
+        <div class="modal-body">
+          <p id="modal-text">The information you entered is incorrect. Please try again!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
 
 	<!-- Optional JavaScript -->
 	<script src="js/login.js"></script>
