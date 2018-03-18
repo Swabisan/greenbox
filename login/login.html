@@ -13,50 +13,45 @@
 	 crossorigin="anonymous">
 </head>
 
-<body>
+<body class="grid-container-white">
 
-		<div class="container-fluid">
-				<div class="grid-item">
-					<div class="center-anchor">
-						<div class="text-center">
-							<header>
-								<div>
-										<h2>User Info</h2>
-								</div>
-							</header>
+	<div class="container-fluid">
+		<div class="grid-item">
+			<div class="center-anchor">
+				<div class="text-center">
+					<header>
+						<div class="fixed-header">
+							<h2>User Info</h2>
 						</div>
-					</div>
-				</div>
-				<div class="grid-item">
-					<div class="center-anchor">
-						<div class="text-center">
-								<form id="login-account" class="formBody">
-										<label for="firstName">USER NAME</label>
-										<input type="text" class="form-control" id="userName" placeholder="" value="" required="">
-						
-										<label for="firstName">PASSWORD</label>
-										<input type="text" class="form-control" id="password" placeholder="" value="" required="">
-
-										<div class="row">
-											<button class="doc-button">CALIFORNIAN ID</button>
-						
-											<button class="doc-button">MEDICAL MARIJUANA CARD</button>
-										</div>
-						
-										<button class="submit">NEXT</button>
-									</form>
-						</div>
-					</div>
-				</div>
-				<div class="footer">
-					<footer>
-						GreenBox 2018
-					</footer>
+					</header>
 				</div>
 			</div>
+		</div>
+		<div class="grid-item">
+			<div class="center-anchor">
+				<div class="text-center">
+					<form id="login-account" class="formBody">
+
+						<label for="firstName">Username</label>
+						<input type="text" class="form-control" id="userName" placeholder="" value="" required="">
+
+						<label for="firstName">Password</label>
+						<input type="password" class="form-control" id="password" placeholder="" value="" required="">
+						<br>
+						<button class="submit btn btn-greenbox">Login</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+				<footer>
+					<p>GreenBox 2018</p>
+				</footer>
+		</div>
+	</div>
 
 	<!-- Optional JavaScript -->
-	<script src="js/login.js"></script>
+	<script src="js/account-creation.js"></script>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 	 crossorigin="anonymous"></script>

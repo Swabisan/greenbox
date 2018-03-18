@@ -30,6 +30,12 @@ color: rgb(88, 184, 142);
 width: 350px;
 box-shadow: 1px 2px grey;
 }
+.btn-greenbox-nomargin {
+background-color: honeydew;
+color: rgb(88, 184, 142);
+width: 350px;
+box-shadow: 1px 2px grey;
+}
 .grid-container {
 display: grid;
 grid-template-columns: auto auto 4;
@@ -41,24 +47,11 @@ padding: 20px;
 font-size: 30px;
 text-align: center;
 }
-.submit-button {
-  border-radius: 10px;
-  box-sizing: content-box;
-  background-color: rgb(88, 184, 142);
-  color: white;
-}
-
-.doc-button {
-  border-radius: 10px;
-  background-color: rgb(88, 184, 142);
-  color: white;
-}
-
 .fixed-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: 15px;
-  margin-left: 15px;
+display: flex;
+flex-wrap: wrap;
+margin-right: 15px;
+margin-left: 15px;
 }
 .fixed-header {
 position: absolute;
@@ -70,8 +63,11 @@ background-color: rgba(96, 211, 161, 0.8);
 text-align: center;
 }
 .grid-container-white {
-  display: grid;
-  grid-template-columns: auto auto 4;
-  background-color: whitesmoke;
-  padding: 10px;
-  }
+display: grid;
+grid-template-columns: auto auto 4;
+background-color: whitesmoke;
+padding: 10px;
+}
+.in-line {
+display: inline;
+}
